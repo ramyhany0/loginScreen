@@ -21,31 +21,31 @@ class _loginState extends State<login> {
                 height: 150,
               ),
               Container(
-                padding: EdgeInsets.only(right: 20, left: 20),
+                padding: const EdgeInsets.only(right: 20, left: 20),
                 child: TextField(
                   decoration: InputDecoration(
                     hintText: "Email",
                     labelText: "Email",
-                    labelStyle: TextStyle(color: Color(0xFFf17744)),
-                    suffixIcon: Icon(
+                    labelStyle: const TextStyle(color: Color(0xFFf17744)),
+                    suffixIcon: const Icon(
                       Icons.email,
                       color: Color(0xFFf17744),
                     ),
                     enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 1,
                         )),
                     disabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 1,
                         )),
                     focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 1,
                         )),
@@ -56,31 +56,31 @@ class _loginState extends State<login> {
                 height: 20,
               ),
               Container(
-                padding: EdgeInsets.only(right: 20, left: 20),
+                padding: const EdgeInsets.only(right: 20, left: 20),
                 child: TextField(
                   decoration: InputDecoration(
                     hintText: "Password",
                     labelText: "Password",
-                    labelStyle: TextStyle(color: Color(0xFFf17744)),
-                    suffixIcon: Icon(
+                    labelStyle: const TextStyle(color: Color(0xFFf17744)),
+                    suffixIcon: const Icon(
                       Icons.lock,
                       color: Color(0xFFf17744),
                     ),
                     enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 1,
                         )),
                     disabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 1,
                         )),
                     focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 1,
                         )),
@@ -92,8 +92,8 @@ class _loginState extends State<login> {
               ),
               MaterialButton(
                   elevation: 5,
-                  color: Color(0xFFf17744),
-                  padding: EdgeInsets.symmetric(
+                  color: const Color(0xFFf17744),
+                  padding: const EdgeInsets.symmetric(
                     vertical: 10,
                     horizontal: 50,
                   ),
@@ -119,7 +119,7 @@ class _loginState extends State<login> {
                     return ForgetPassword();
                   }));
                 },
-                child: Text(
+                child: const Text(
                   "Forget Password ?",
                   style: TextStyle(
                     color: Color(0xFFf17744),
@@ -137,7 +137,7 @@ class _loginState extends State<login> {
                     return SignUp();
                   }));
                 },
-                child: Text(
+                child: const Text(
                   "Sign Up",
                   style: TextStyle(
                     color: Color(0xFFf17744),

@@ -16,16 +16,15 @@ class _SignUpState extends State<SignUp> {
           backgroundColor: Colors.transparent,
           elevation: 0,
           foregroundColor: Colors.black,
-          title: Text(
+          title: const Text(
             "Sign Up",
             style: TextStyle(color: Color(0xFFb1b1b1)),
           ),
         ),
         body: SingleChildScrollView(
           child: Column(
-            
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Column(
@@ -54,123 +53,114 @@ class _SignUpState extends State<SignUp> {
                 height: 100,
               ),
               Container(
-                padding: EdgeInsets.only(right:20 , left:20 ),
+                padding: const EdgeInsets.only(right: 20, left: 20),
                 child: TextField(
                   decoration: InputDecoration(
-                   
                     labelText: "Email",
-                    labelStyle: TextStyle(color: Color(0xFFf17744)),
-                    suffixIcon: Icon(
+                    labelStyle: const TextStyle(color: Color(0xFFf17744)),
+                    suffixIcon: const Icon(
                       Icons.email,
                       color: Colors.orange,
                     ),
                     enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 2,
-        
                         )),
                     disabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 2,
                         )),
                     focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 2,
                         )),
                   ),
                 ),
               ),
-        
               const SizedBox(
                 height: 20,
               ),
-        
-              Container(padding: EdgeInsets.only(right:20 , left:20 ),
+              Container(
+                padding: const EdgeInsets.only(right: 20, left: 20),
                 child: TextField(
                   decoration: InputDecoration(
                     hintText: "Enter Your Password",
                     labelText: "Password",
-                    labelStyle: TextStyle(color: Color(0xFFf17744)),
-                    suffixIcon: Icon(
+                    labelStyle: const TextStyle(color: Color(0xFFf17744)),
+                    suffixIcon: const Icon(
                       Icons.lock,
                       color: Colors.orange,
                     ),
                     enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 2,
-        
                         )),
                     disabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 2,
                         )),
                     focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 2,
                         )),
                   ),
-                ),),
-        
-        
-                const SizedBox(
+                ),
+              ),
+              const SizedBox(
                 height: 20,
               ),
-        
-              Container(padding: EdgeInsets.only(right:20 , left:20 ),
+              Container(
+                padding: const EdgeInsets.only(right: 20, left: 20),
                 child: TextField(
                   decoration: InputDecoration(
                     hintText: "Re-Enter Your Password",
                     labelText: "Confirm Password",
-                    labelStyle: TextStyle(color: Color(0xFFf17744)),
-                    suffixIcon: Icon(
+                    labelStyle: const TextStyle(color: Color(0xFFf17744)),
+                    suffixIcon: const Icon(
                       Icons.lock,
                       color: Colors.orange,
                     ),
                     enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 2,
-        
                         )),
                     disabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 2,
                         )),
                     focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.grey,
                           width: 2,
                         )),
                   ),
-                ),),
-        
-        
+                ),
+              ),
               const SizedBox(
                 height: 50,
               ),
-              
-              
               Container(
                 child: MaterialButton(
                     //elevation: 5,
-                    color: Color(0xFFf17744),
-                    padding: EdgeInsets.symmetric(
+                    color: const Color(0xFFf17744),
+                    padding: const EdgeInsets.symmetric(
                       vertical: 10,
                       horizontal: 50,
                     ),
@@ -190,6 +180,5 @@ class _SignUpState extends State<SignUp> {
             ],
           ),
         ));
-  
   }
 }

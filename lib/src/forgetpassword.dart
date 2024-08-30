@@ -16,14 +16,14 @@ class _ForgetPasswordState extends State<ForgetPassword> {
           backgroundColor: Colors.transparent,
           elevation: 0,
           foregroundColor: Colors.black,
-          title: Text(
+          title: const Text(
             "Forget Password",
             style: TextStyle(color: Color(0xFFb1b1b1)),
           ),
         ),
         body: Column(
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Column(
@@ -52,32 +52,30 @@ class _ForgetPasswordState extends State<ForgetPassword> {
               height: 100,
             ),
             Container(
-              padding: EdgeInsets.only(right: 20 , left: 20),
+              padding: const EdgeInsets.only(right: 20, left: 20),
               child: TextField(
                 decoration: InputDecoration(
-                  
                   labelText: "Email",
-                  labelStyle: TextStyle(color: Color(0xFFf17744)),
-                  suffixIcon: Icon(
+                  labelStyle: const TextStyle(color: Color(0xFFf17744)),
+                  suffixIcon: const Icon(
                     Icons.email,
                     color: Colors.orange,
                   ),
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.grey,
                         width: 2,
-
                       )),
                   disabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.grey,
                         width: 2,
                       )),
                   focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.grey,
                         width: 2,
                       )),
@@ -88,11 +86,10 @@ class _ForgetPasswordState extends State<ForgetPassword> {
               height: 100,
             ),
             Container(
-              
               child: MaterialButton(
                   //elevation: 5,
-                  color: Color(0xFFf17744),
-                  padding: EdgeInsets.symmetric(
+                  color: const Color(0xFFf17744),
+                  padding: const EdgeInsets.symmetric(
                     vertical: 10,
                     horizontal: 50,
                   ),
@@ -111,6 +108,5 @@ class _ForgetPasswordState extends State<ForgetPassword> {
             )
           ],
         ));
-  
   }
 }
